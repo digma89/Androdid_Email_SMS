@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+
+    <TextView android:text="Enter the message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/textToSend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/sendSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="3"
+        android:onClick="sendMessage"
+        android:textSize="30px"
+        android:text="send SMS" />
+
+    <Button
+        android:id="@+id/sendEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="3"
+        android:onClick="sendMessage"
+        android:textSize="30px"
+        android:text="send Email" />
+
+    <TextView android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
